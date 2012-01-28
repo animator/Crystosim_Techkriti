@@ -1,0 +1,11 @@
+import wx
+import cubic
+if __name__=='__main__':
+    app=wx.PySimpleApp()
+    na=['cubic','2','3','4']
+    modal=wx.SingleChoiceDialog(None,"harry potter","title here",na)
+    if modal.ShowModal()==wx.ID_OK:
+        print "see whether it runs %s\n" % modal.GetStringSelection()
+        cubic.main(1,1,1,2,1,0.5)
+    modal.Destroy()
+
